@@ -1,0 +1,9 @@
+{
+    "name": "edmondscommerce/magento2-zalenium",
+    "description": "Allows Zalenium to integrate with the Magento 2 functional testing framework",
+    "autoload": {
+        "psr-4": {
+            "EdmondsCommerce\\Zalenium\\": "src/"
+        }
+    }
+}
