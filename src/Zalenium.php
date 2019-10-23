@@ -27,6 +27,8 @@ class Zalenium extends Module
 
             return $currentCapabilities;
         });
+
+        $this->getWebDriver()->maximizeWindow();
     }
 
     private function getWebDriver(): MagentoWebDriver
