@@ -1,9 +1,16 @@
-# Magento2 Zalenium Plugin
+# Magento 2 Zalenium Plugin
 Integrates Zalenium for improved testing with the functional testing framework
+
+## Features
+This Codeception module extends the Magento 2 acceptance tests to print out the current step of a given test and
+also segments the videos by their test name and also marks each test video as passed or failed.
+
+Without this module, the full test suite would be a complete video and no test status or steps would be logged.
+
 
 ## Setup
 To use the Zalenium plugin inside your acceptance tests you need to add `EdmondsCommerce\Zalenium\Zalenium`
-to your `dev/tests/acceptance/tests/functional.suite.yml` in the `modules area.
+to your `dev/tests/acceptance/tests/functional.suite.yml` in the modules area.
 
 **Partial Example**
 ```yaml
@@ -18,8 +25,7 @@ modules:
         - \Magento\FunctionalTestingFramework\Module\MagentoAssert
         - \Magento\FunctionalTestingFramework\Module\MagentoActionProxies
         - Asserts
-        - EdmondsCommerce\Zalenium\Zalenium
-
+        - EdmondsCommerce\Zalenium\Zalenium # This one 
 ```
 
 You must also ensure that (depending on your installation) self signed certificates are accepted.
