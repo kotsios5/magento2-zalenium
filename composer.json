@@ -3,7 +3,6 @@
     "description": "Allows Zalenium to integrate with the Magento 2 functional testing framework",
     "license": "MIT",
     "require": {
-        "magento/magento2-functional-testing-framework": "^2.3",
         "php": "^7.1"
     },
     "autoload": {
